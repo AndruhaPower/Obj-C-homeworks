@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#define NUMONE 15.0
+#define NUMTWO 3.0
 
 @interface AppDelegate ()
 
@@ -17,6 +19,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // калькулятор?
+    
+    NSLog(@"First number - %f, second number -  %f, sum operation - %f", NUMONE, NUMTWO, NUMONE + NUMTWO);
+    NSLog(@"First number - %f, second number -  %f, subraction operation - %f", NUMONE, NUMTWO, NUMONE - NUMTWO);
+    NSLog(@"First number - %f, second number -  %f, multiplication operation - %f", NUMONE, NUMTWO, NUMONE * NUMTWO);
+    NSLog(@"First number - %f, second number -  %f, division operation - %f", NUMONE, NUMTWO, NUMONE * NUMTWO);
+    
+    // среднее значение 
+    int one = 3;
+    int two = 42;
+    int three = 23;
+    
+    NSLog(@"First number - %d, second number - %d, third number - %d,\n Average of three numbers - %f", one, two, three, ((float)one + (float)two + (float)three) / 3);
     return YES;
 }
 
