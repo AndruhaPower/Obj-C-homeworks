@@ -34,6 +34,38 @@
     
     NSLog(@"First number - %d, second number - %d, third number - %d,\n Average of three numbers - %f", one, two, three, ((float)one + (float)two + (float)three) / 3);
     return YES;
+
+}
+
+-(BOOL) englishAlphabetCheck: (NSString *) character {
+    NSString *englishAlphabet = @"abcdefghijklmopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    NSRange range = [englishAlphabet rangeOfString:character];
+    BOOL contains = range.location != NSNotFound;
+    return  contains;
+}
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int subtract(int a, int b) {
+    return a - b;
+}
+
+int multiply(int a, int b) {
+    return a * b;
+}
+
+int divide(int a, int b) {
+    if (b != 0) {
+        return a / b;
+    } else {
+        return 0;
+    }
+}
+
+int truncatingReminder(int a, int b) {
+    return a % b;
 }
 
 
