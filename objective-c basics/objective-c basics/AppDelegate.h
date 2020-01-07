@@ -15,7 +15,9 @@
 
 - (void)saveContext;
 
--(BOOL) englishAlphabetCheck: (NSString *) character;
+- (BOOL) englishAlphabetCheck: (NSString *) character;
+
+- (int) inputString;
 
 @end
 

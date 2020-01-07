@@ -37,6 +37,16 @@
 
 }
 
+int inputString()  {
+    
+    char string[250];
+    NSLog(@"\nPlease input a sentence: ");
+    scanf("%[ˆ\n]", string);
+    printf("Your sentence is: %s", string);
+    
+    return 0;
+}
+
 -(BOOL) englishAlphabetCheck: (NSString *) character {
     NSString *englishAlphabet = @"abcdefghijklmopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     NSRange range = [englishAlphabet rangeOfString:character];
