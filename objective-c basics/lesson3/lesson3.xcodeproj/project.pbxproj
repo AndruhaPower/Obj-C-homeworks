@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4926CAF023CB46AC00D02A42 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 4926CAEF23CB46AC00D02A42 /* Student.m */; };
+		4926CAF923CBA6C000D02A42 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4926CAF823CBA6C000D02A42 /* Animal.m */; };
 		495D22FA23C40CF300859FF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 495D22F923C40CF300859FF0 /* main.m */; };
+		4960254C23CBAA5A004E83C7 /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 4960254B23CBAA5A004E83C7 /* Monkey.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +26,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4926CAEE23CB46AC00D02A42 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		4926CAEF23CB46AC00D02A42 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		4926CAF723CBA6C000D02A42 /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		4926CAF823CBA6C000D02A42 /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 		495D22F623C40CF300859FF0 /* lesson3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lesson3; sourceTree = BUILT_PRODUCTS_DIR; };
 		495D22F923C40CF300859FF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4960254A23CBAA5A004E83C7 /* Monkey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
+		4960254B23CBAA5A004E83C7 /* Monkey.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Monkey.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +47,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4926CAFA23CBA8A100D02A42 /* AllPrinciples */ = {
+			isa = PBXGroup;
+			children = (
+				4926CAF723CBA6C000D02A42 /* Animal.h */,
+				4926CAF823CBA6C000D02A42 /* Animal.m */,
+				4960254A23CBAA5A004E83C7 /* Monkey.h */,
+				4960254B23CBAA5A004E83C7 /* Monkey.m */,
+			);
+			path = AllPrinciples;
+			sourceTree = "<group>";
+		};
 		495D22ED23C40CF300859FF0 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				495D22F923C40CF300859FF0 /* main.m */,
+				4926CAEE23CB46AC00D02A42 /* Student.h */,
+				4926CAEF23CB46AC00D02A42 /* Student.m */,
+				4926CAFA23CBA8A100D02A42 /* AllPrinciples */,
 			);
 			path = lesson3;
 			sourceTree = "<group>";
@@ -119,7 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4960254C23CBAA5A004E83C7 /* Monkey.m in Sources */,
+				4926CAF923CBA6C000D02A42 /* Animal.m in Sources */,
 				495D22FA23C40CF300859FF0 /* main.m in Sources */,
+				4926CAF023CB46AC00D02A42 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

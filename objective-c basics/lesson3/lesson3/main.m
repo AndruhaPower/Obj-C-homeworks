@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Student.h"
+#import "Animal.h"
+#import "Monkey.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -31,6 +34,35 @@ int main(int argc, const char * argv[]) {
         for (NSNumber *increment in numbersArray) {
             NSLog(@"%@", increment);
         }
+    }
+    
+//     Cписок студентов
+    NSDictionary *students = [NSDictionary dictionaryWithObjectsAndKeys: @23, @"Andrey", @21, @"Alex", @30, @"Alena", @25, @"Nikita", nil];
+    
+    NSArray *studentsAsObjectsArray = [Student getStudentsList:students];
+    
+    for (Student *student in studentsAsObjectsArray) {
+        NSLog(@"Student name: %@ \n and age: %@", student.name, student.age);
+        
+        
+    // ПРОГРАММА (КОД) НА ВСЕ ПРИНЦИПЫ
+        
+        // базовый класс животное. инициализация и вызов метода
+        Animal *cow = [[Animal alloc] init:@4 sound:@"Moo" name:@"Cow"];
+        [cow makeSound];
+        
+        Animal * elephant = [[Animal alloc] init:@4 sound:@"Phoot" name:@"Elephant"];
+        // подкласс животного обезьяна с переопределенным методом makeSound;
+        Monkey *gorilla = [[Monkey alloc] init:@"Gorilla"];
+        [gorilla makeSound];
+        
+        NSArray * animalsArray = [NSArray arrayWithObjects:cow, gorilla, elephant, nil];
+        
+        /* Полиморфизм ? два экземпляра класса Animal реализуют свой метод makeSound, а экземпляр Monkey реализует свой */
+        
+        for (Animal *animal in animalsArray) {
+            [animal makeSound];
+        }  
     }
     return 0;
 }
